@@ -1,0 +1,1044 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  position: relative;
+}
+.bi {
+  position: absolute;
+  right: 56px;
+  font-size: 30px;
+  top: 24px;
+}
+.bi-x-lg {
+  display: none;
+}
+.hand {
+  object-fit: cover;
+  height: 100%;
+}
+.cta-section {
+  background-image: url(../images/cta-section-bg.png);
+}
+/* xs-phone */
+@media (min-width: 320px) and (max-width: 374px) {
+  /* responsive nav */
+  .header {
+    padding-left: 20px;
+  }
+  .nav-menu {
+    display: none;
+    height: 200px;
+    position: absolute;
+    bottom: -180px;
+    width: 86%;
+    background-color: #001f3f;
+    padding: 20px;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  li a:hover {
+    text-decoration: none;
+  }
+  .bi {
+    right: 20px;
+  }
+  .hero-heading {
+    font-size: 30px;
+    line-height: 40px;
+    width: 90%;
+    margin: 80px auto 0 auto;
+  }
+  .hero-para {
+    width: 90%;
+    margin: 16px auto 0 auto;
+    font-size: 14px;
+  }
+  .button-container {
+    margin-top: 32px;
+  }
+  .hero-down {
+    flex-direction: column;
+    margin: 40px 40px 0;
+    gap: 24px;
+  }
+  .outer-container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .inner-container {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .hero-image-1, .hero-image-2 {
+   height: 160px;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+  }
+  .well-being-section {
+    padding: 40px;
+    margin: 104px 20px;
+    height: fit-content;
+  }
+  .well-being-section-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .well-being-heading {
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .well-being-section-text {
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .leaf {
+    display: block;
+    margin: 0 auto;
+  }
+  .well-being-para {
+    text-align: center;
+    font-size: 13px;
+  }
+  .well-being-section-right {
+    display: none;
+  }
+  .fresh-organic-produce {
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .hand {
+    width: 100%;
+  }
+  .fresh-organic-produce-heading {
+    font-size: 24px;
+    line-height: 34px;
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .fresh-organic-produce-para {
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .fresh-organic-produce-grid {
+    margin-top: 47px;
+  }
+  .flower-para {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .what-you-eat {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 55px 10px;
+  }
+  .what-you-eat-left {
+    display: none;
+  }
+  .what-you-eat-right {
+    width: 100%;
+    margin: 0;
+  }
+  .what-you-eat-heading {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .what-you-eat-grid {
+    margin: 40px auto 0 auto;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+  .what-you-eat-grid-inner img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .what-you-eat-grid-inner p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .cta-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 500px;
+  }
+  .plant-protective-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-section-heading {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    width: 80%;
+  }
+  .cta-section-para {
+    width: 80%;
+    font-size: 14px;
+    display: none;
+  }
+  .cta-section-btn {
+    width: 220px;
+  }
+  .plant-protective {
+    bottom: -44%;
+    padding: 60px 40px;
+  }
+  .plant-protective-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .footer {
+    margin-top: 700px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .footer-up {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .footer-links {
+    row-gap: 33px;
+    column-gap: 40px;
+    width: 60%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+/* phone */
+@media (min-width: 375px) and (max-width: 474px) {
+  /* responsive nav */
+  .header {
+    padding-left: 30px;
+  }
+  .nav-menu {
+    display: none;
+    height: 200px;
+    position: absolute;
+    bottom: -180px;
+    width: 86%;
+    background-color: #001f3f;
+    padding: 20px;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  li a:hover {
+    text-decoration: none;
+  }
+  .bi {
+    right: 30px;
+  }
+  .hero-heading {
+    font-size: 36px;
+    line-height: 40px;
+    width: 90%;
+    margin: 80px auto 0 auto;
+  }
+  .hero-para {
+    width: 90%;
+    margin: 16px auto 0 auto;
+  }
+  .hero-down {
+    flex-direction: column;
+    margin: 40px 40px 0;
+    gap: 32px;
+  }
+  .outer-container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .inner-container {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .hero-image-1, .hero-image-2 {
+   height: 200px;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+  }
+  .well-being-section {
+    padding: 40px;
+    margin: 104px 30px;
+    height: fit-content;
+  }
+  .well-being-section-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .well-being-heading {
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .well-being-section-text {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leaf {
+    display: block;
+    margin: 0 auto;
+  }
+  .well-being-para {
+    text-align: center;
+    font-size: 14px;
+  }
+  .well-being-section-right {
+    display: none;
+  }
+  .fresh-organic-produce {
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .hand {
+    width: 100%;
+  }
+  .fresh-organic-produce-heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .fresh-organic-produce-para {
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .flower-para {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .what-you-eat {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 60px 10px;
+  }
+  .what-you-eat-left {
+    display: none;
+  }
+  .what-you-eat-right {
+    width: 100%;
+    margin: 0;
+  }
+  .what-you-eat-heading {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .what-you-eat-grid {
+    margin: 62px auto 0 auto;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+  .what-you-eat-grid-inner img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .what-you-eat-grid-inner p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .cta-section {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .plant-protective-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-section-heading {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    width: 80%;
+  }
+  .cta-section-para {
+    width: 80%;
+    font-size: 14px;
+  }
+  .cta-section-btn {
+    width: 220px;
+  }
+  .plant-protective {
+    bottom: -44%;
+    padding: 60px 40px;
+  }
+  .plant-protective-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .footer {
+    margin-top: 700px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .footer-up {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .footer-links {
+    row-gap: 33px;
+    column-gap: 40px;
+    width: 60%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+/* xs */
+@media (min-width: 475px) and (max-width: 639px) {
+  /* responsive nav */
+  .header {
+    padding-left: 40px;
+  }
+  .nav-menu {
+    display: none;
+    height: 200px;
+    position: absolute;
+    bottom: -180px;
+    width: 86%;
+    background-color: #001f3f;
+    padding: 20px;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  li a:hover {
+    text-decoration: none;
+  }
+  .bi {
+    right: 40px;
+  }
+  .hero-heading {
+    font-size: 46px;
+    line-height: 60px;
+    width: 90%;
+    margin: 80px auto 0 auto;
+  }
+  .hero-para {
+    margin: 16px auto 0 auto;
+    width: 90%;
+  }
+  .hero-down {
+    flex-direction: column;
+    margin: 40px 40px 0;
+    gap: 32px;
+  }
+  .outer-container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .inner-container {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .hero-image-1, .hero-image-2 {
+   height: 250px;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+  }
+  .well-being-section {
+    padding: 40px;
+    margin: 104px 40px;
+    height: fit-content;
+  }
+  .well-being-section-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .well-being-heading {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .well-being-section-text {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leaf {
+    display: block;
+    margin: 0 auto;
+  }
+  .well-being-para {
+    text-align: center;
+    font-size: 14px;
+  }
+  .well-being-section-right {
+    display: none;
+  }
+  .fresh-organic-produce {
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .hand {
+    width: 100%;
+  }
+  .fresh-organic-produce-heading {
+    font-size: 34px;
+  }
+  .what-you-eat {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 60px 40px;
+  }
+  .what-you-eat-left {
+    display: none;
+  }
+  .what-you-eat-right {
+    width: 100%;
+    margin: 0;
+  }
+  .what-you-eat-heading {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .what-you-eat-grid {
+    margin: 62px auto 0 auto;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+  .what-you-eat-grid-inner img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .what-you-eat-grid-inner p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .cta-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .plant-protective-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-section-heading {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 36px;
+    width: 80%;
+  }
+  .cta-section-para {
+    width: 80%;
+  }
+  .plant-protective {
+    bottom: -44%;
+    padding: 60px 40px;
+  }
+  .plant-protective-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .footer {
+    margin-top: 700px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .footer-up {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .footer-links {
+    gap: 100px;
+    width: 60%;
+  }
+}
+/* sm */
+@media (min-width: 640px) and (max-width: 767px) {
+  /* responsive nav */
+  .header {
+    padding-left: 40px;
+  }
+  .nav-menu {
+    display: none;
+    height: 200px;
+    position: absolute;
+    bottom: -180px;
+    width: 88%;
+    background-color: #001f3f;
+    padding: 20px;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  li a:hover {
+    text-decoration: none;
+  }
+  .bi {
+    right: 40px;
+  }
+  .hero-heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .hero-down {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+    margin: 56px 40px 0 40px;
+  }
+  .outer-container {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .inner-container {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+    height: 330px;
+  }
+  .well-being-section {
+    padding: 40px;
+    margin: 104px 40px;
+    height: fit-content;
+  }
+  .well-being-section-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .well-being-heading {
+    text-align: center;
+  }
+  .well-being-section-text {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leaf {
+    display: block;
+    margin: 0 auto;
+  }
+  .well-being-para {
+    text-align: center;
+    font-size: 14px;
+  }
+  .well-being-section-right {
+    display: none;
+  }
+  .fresh-organic-produce {
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .hand {
+    width: 100%;
+  }
+  .fresh-organic-produce-heading {
+    font-size: 46px;
+  }
+  .what-you-eat {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 60px 40px;
+  }
+  .what-you-eat-left {
+    display: none;
+  }
+  .what-you-eat-right {
+    width: 100%;
+    margin: 0;
+  }
+  .what-you-eat-heading {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 46px;
+  }
+  .what-you-eat-grid {
+    margin: 62px auto 0 auto;
+    flex-direction: column;
+    width: 80%;
+  }
+  .what-you-eat-grid-inner img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .what-you-eat-grid-inner p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .cta-section {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .cta-section-heading {
+    margin-top: 40px;
+  }
+  .plant-protective {
+    bottom: 0;
+  }
+  .plant-protective-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-section-heading {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 36px;
+    width: 80%;
+  }
+  .cta-section-para {
+    width: 80%;
+  }
+  .plant-protective {
+    bottom: -44%;
+    padding: 60px 40px;
+  }
+  .plant-protective-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .footer {
+    margin-top: 700px;
+  }
+  .footer-up {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .footer-links {
+    gap: 100px;
+    width: 60%;
+  }
+}
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* responsive nav */
+  .header {
+    padding-left: 56px;
+  }
+  .nav-menu {
+    display: none;
+    height: 200px;
+    position: absolute;
+    bottom: -180px;
+    width: 87%;
+    background-color: #001f3f;
+    padding: 20px;
+    left: 56px;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  li a:hover {
+    text-decoration: none;
+  }
+  .hero-heading {
+    font-size: 56px;
+  }
+  .hero-down {
+    margin-top: 0;
+    gap: 48px;
+    margin-top: 0px;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+    object-fit: contain;
+  }
+  .well-being-section {
+    padding: 40px;
+  }
+  .well-being-section-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .well-being-heading {
+    text-align: center;
+  }
+  .well-being-section-text {
+    justify-content: center;
+  }
+  .leaf {
+    display: block;
+    margin: 0 auto;
+  }
+  .well-being-para {
+    text-align: center;
+    font-size: 14px;
+  }
+  .well-being-section-right {
+    display: none;
+  }
+  .fresh-organic-produce {
+    flex-direction: column;
+  }
+  .what-you-eat-left {
+    display: none;
+  }
+  .what-you-eat-right {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .what-you-eat-heading {
+    text-align: center;
+  }
+  .what-you-eat-grid {
+    margin: 62px auto 0 auto;
+    flex-direction: column;
+  }
+  .what-you-eat-grid-inner img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .what-you-eat-grid-inner p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .cta-section-heading {
+    margin-top: 40px;
+  }
+  .plant-protective {
+    bottom: -48%;
+    padding: 60px 40px;
+  }
+  .plant-protective-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .footer {
+    margin-top: 500px;
+  }
+  .footer-up {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .footer-links {
+    gap: 60px;
+    width: 60%;
+  }
+}
+/* lg */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bi {
+    display: none;
+  }
+  .hero-down {
+    margin-top: 40px;
+    gap: 48px;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+    object-fit: contain;
+  }
+  .well-being-section {
+    padding: 40px;
+  }
+  .well-being-section-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .well-being-heading {
+    text-align: center;
+  }
+  .well-being-section-text {
+    justify-content: center;
+  }
+  .leaf {
+    display: block;
+    margin: 0 auto;
+  }
+  .well-being-para {
+    text-align: center;
+  }
+  .well-being-section-right {
+    display: none;
+  }
+  .what-you-eat-left {
+    display: none;
+  }
+  .what-you-eat-right {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .what-you-eat-heading {
+    text-align: center;
+  }
+  .what-you-eat-grid {
+    margin: 62px auto 0 auto;
+  }
+  .what-you-eat-grid-inner img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .what-you-eat-grid-inner p {
+    text-align: center;
+  }
+  .cta-section-para {
+    width: 50%;
+  }
+  .plant-protective {
+    bottom: -65%;
+  }
+  .plant-protective-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .footer {
+    margin-top: 500px;
+  }
+}
+/* xl */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bi {
+    display: none;
+  } 
+  .hero-down {
+    gap: 48px;
+  }
+  .hero-image-1, .hero-image-2 {
+    width: 100%;
+    object-fit: contain;
+  }
+  .well-being-heading {
+    font-size: 40px;
+  }
+  .well-being-para {
+    font-size: 14px;
+  }
+  .well-being-section-right {
+    object-fit: contain;
+  }
+  .what-you-eat-heading {
+    font-size: 40px;
+  }
+  .what-you-eat-grid {
+    gap: 40px;
+  }
+}
+/* 2xl */
+@media (min-width: 1440px) and (max-width: 1536px) {
+  .bi {
+    display: none;
+  } 
+}
+@media (min-width: 1536px) {
+  .bi {
+    display: none;
+  }  
+}
