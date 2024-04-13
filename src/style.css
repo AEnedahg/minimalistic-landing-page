@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  width: 100vw;
+  max-width: 1440px;
+}
 header {
   position: relative;
 }
